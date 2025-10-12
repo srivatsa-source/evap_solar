@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Zinc-Ion Batteries - Beyond Lithium technology for safer, sustainable, and cost-effective energy storage solutions"
+    />
+    <title>Zinc-Ion Batteries - EVAPSolar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .model-card {
+        padding: 1.5rem !important;
+        border-radius: 12px !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+        text-align: center !important;
+      }
+      .model-card div[style*="width: 60px"] {
+        width: 50px !important;
+        height: 50px !important;
+        margin: 0 auto 1rem !important;
+      }
+      .model-card svg {
+        width: 24px !important;
+        height: 24px !important;
+      }
+      .model-card h3 {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.5rem !important;
+      }
+      .model-card p {
+        font-size: 1.1rem !important;
+      }
+      .model-grid {
+        gap: 1.5rem !important;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text"
+            >EVAP<span class="logo-highlight">Solar</span></span
+          >
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <a href="index.html" class="nav-link">Home</a>
+          <div class="dropdown">
+            <a href="#products" class="nav-link dropdown-toggle">Products</a>
+            <div class="dropdown-menu">
+              <a href="modules.html" class="dropdown-item">Modules</a>
+              <a href="energy-storage.html" class="dropdown-item active"
+                >Energy Storage</a
+              >
+              <a href="charging-stations.html" class="dropdown-item"
+                >Charging Stations</a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="index.html#solutions" class="nav-link dropdown-toggle"
+              >Solutions</a
+            >
+            <div class="dropdown-menu">
+              <a href="index.html#utility" class="dropdown-item">Utility</a>
+              <a href="index.html#industrial" class="dropdown-item"
+                >Industrial</a
+              >
+              <a href="index.html#residential" class="dropdown-item"
+                >Residential</a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="index.html#about" class="nav-link dropdown-toggle"
+              >Research and Development</a
+            >
+            <div class="dropdown-menu">
+              <a href="solar-cells.html" class="dropdown-item">Solar Cells</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="index.html#about" class="nav-link dropdown-toggle"
+              >About Us</a
+            >
+            <div class="dropdown-menu">
+              <a href="index.html#about" class="dropdown-item">Company Info</a>
+              <a href="index.html#about" class="dropdown-item">Our Team</a>
+              <a href="index.html#about" class="dropdown-item">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero energy-storage-hero" id="home">
+      <div
+        class="hero-background"
+        style="
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.6),
+              rgba(0, 0, 0, 0.6)
+            ),
+            url('https://images.pexels.com/photos/7286029/pexels-photo-7286029.jpeg');
+        "
+      ></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="text-highlight">ZINC-ION</span> BATTERIES
+        </h1>
+        <p class="hero-subtitle">
+          Beyond Lithium - The Future of Safe Energy Storage
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+          "
+        >
+          <span
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(10px);
+              padding: 0.5rem 1rem;
+              border-radius: 25px;
+              color: white;
+              font-weight: 500;
+            "
+            >Safer</span
+          >
+          <span
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(10px);
+              padding: 0.5rem 1rem;
+              border-radius: 25px;
+              color: white;
+              font-weight: 500;
+            "
+            >Sustainable</span
+          >
+          <span
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(10px);
+              padding: 0.5rem 1rem;
+              border-radius: 25px;
+              color: white;
+              font-weight: 500;
+            "
+            >Cost-Effective</span
+          >
+        </div>
+        <p class="hero-description">
+          Revolutionary zinc-ion battery technology that combines safety,
+          sustainability, and cost-effectiveness for next-generation energy
+          storage solutions.
+        </p>
+        <div class="hero-cta">
+          <a href="#concept" class="cta-button">Discover Technology</a>
+          <a href="#applications" class="cta-button secondary"
+            >View Applications</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Concept Section -->
+    <section class="core-concept" id="concept">
+      <div class="container">
+        <div class="trl-badge" style="text-align: center; margin-bottom: 2rem">
+          <span
+            style="
+              background: var(--primary-color);
+              color: white;
+              padding: 0.5rem 1rem;
+              border-radius: 25px;
+              font-weight: 600;
+              margin-right: 1rem;
+            "
+            >TRL 6</span
+          >
+          <span style="color: var(--text-color); font-size: 1.1rem"
+            >Commercial Development</span
+          >
+        </div>
+
+        <h2 class="section-title">REVOLUTIONARY ENERGY STORAGE TECHNOLOGY</h2>
+        <div class="section-divider"></div>
+
+        <div class="concept-grid">
+          <div class="concept-content">
+            <p class="concept-text large">
+              Zinc-ion batteries represent a
+              <strong
+                >groundbreaking advancement in energy storage technology</strong
+              >, offering a safer, more sustainable, and cost-effective
+              alternative to traditional lithium-ion systems.
+            </p>
+            <p class="concept-text">
+              Revolutionary zinc-ion battery technology that combines safety,
+              sustainability, and cost-effectiveness for next-generation energy
+              storage solutions.
+            </p>
+          </div>
+          <div class="concept-image">
+            <img
+              src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg"
+              alt="Zinc-Ion Battery Technology"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specifications Section -->
+    <section class="business-model" id="specifications">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 2rem">
+          <h2
+            style="
+              color: #1f2937;
+              font-size: 2.5rem;
+              font-weight: 800;
+              margin-bottom: 1rem;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            TECHNICAL SPECIFICATIONS
+          </h2>
+          <div
+            style="
+              width: 80px;
+              height: 4px;
+              background: linear-gradient(90deg, #10b981, #059669);
+              margin: 0 auto;
+              border-radius: 2px;
+            "
+          ></div>
+        </div>
+
+        <div
+          class="model-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+          "
+        >
+          <div
+            class="model-card"
+            style="
+              background: white;
+              border-radius: 12px;
+              padding: 1.5rem;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                background: var(--primary-color);
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+              "
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1" />
+              </svg>
+            </div>
+            <h3
+              style="
+                color: #1f2937;
+                font-size: 0.9rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Energy Density
+            </h3>
+            <p
+              style="
+                color: #10b981;
+                font-size: 1.1rem;
+                font-weight: 600;
+                margin: 0;
+              "
+            >
+              100-200 Wh/kg
+            </p>
+          </div>
+
+          <div
+            class="model-card"
+            style="
+              background: white;
+              border-radius: 12px;
+              padding: 1.5rem;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                background: var(--primary-color);
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+              "
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              >
+                <path
+                  d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7"
+                />
+              </svg>
+            </div>
+            <h3
+              style="
+                color: #1f2937;
+                font-size: 0.9rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Cycle Life
+            </h3>
+            <p
+              style="
+                color: #10b981;
+                font-size: 1.1rem;
+                font-weight: 600;
+                margin: 0;
+              "
+            >
+              3000-5000 cycles
+            </p>
+          </div>
+
+          <div
+            class="model-card"
+            style="
+              background: white;
+              border-radius: 15px;
+              padding: 2rem;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                background: var(--primary-color);
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+              "
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              >
+                <path
+                  d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"
+                />
+              </svg>
+            </div>
+            <h3
+              style="
+                color: #1f2937;
+                font-size: 0.9rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Operating Temperature
+            </h3>
+            <p
+              style="
+                color: #10b981;
+                font-size: 1.1rem;
+                font-weight: 600;
+                margin: 0;
+              "
+            >
+              -20°C to +60°C
+            </p>
+          </div>
+
+          <div
+            class="model-card"
+            style="
+              background: white;
+              border-radius: 15px;
+              padding: 2rem;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                background: var(--primary-color);
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1.5rem;
+              "
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"
+                />
+              </svg>
+            </div>
+            <h3
+              style="
+                color: #1f2937;
+                font-size: 0.95rem;
+                font-weight: 700;
+                margin-bottom: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Safety Rating
+            </h3>
+            <p
+              style="
+                color: #10b981;
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin: 0;
+              "
+            >
+              Non-flammable
+            </p>
+          </div>
+
+          <div
+            class="model-card"
+            style="
+              background: white;
+              border-radius: 15px;
+              padding: 2rem;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                background: var(--primary-color);
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1.5rem;
+              "
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 1v22m5-18H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                />
+              </svg>
+            </div>
+            <h3
+              style="
+                color: #1f2937;
+                font-size: 0.95rem;
+                font-weight: 700;
+                margin-bottom: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Cost Advantage
+            </h3>
+            <p
+              style="
+                color: #10b981;
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin: 0;
+              "
+            >
+              30-50% lower
+            </p>
+          </div>
+
+          <div
+            class="model-card"
+            style="
+              background: white;
+              border-radius: 15px;
+              padding: 2rem;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                background: var(--primary-color);
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1.5rem;
+              "
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              >
+                <path
+                  d="M6 2v6h.01M6 18H5v1a2 2 0 0 0 2 2h2M18 2v6h.01M18 18h1v1a2 2 0 0 1-2 2h-2"
+                />
+                <rect x="2" y="10" width="20" height="8" rx="2" />
+              </svg>
+            </div>
+            <h3
+              style="
+                color: #1f2937;
+                font-size: 0.95rem;
+                font-weight: 700;
+                margin-bottom: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Self-discharge
+            </h3>
+            <p
+              style="
+                color: #10b981;
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin: 0;
+              "
+            >
+              &lt; 5% per month
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Components Section -->
+    <section class="business-model" id="components">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 2rem">
+          <h2
+            style="
+              color: #1f2937;
+              font-size: 2.5rem;
+              font-weight: 800;
+              margin-bottom: 1rem;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            CORE CONCEPT & COMPONENTS
+          </h2>
+          <div
+            style="
+              width: 80px;
+              height: 4px;
+              background: linear-gradient(90deg, #10b981, #059669);
+              margin: 0 auto;
+              border-radius: 2px;
+            "
+          ></div>
+        </div>
+
+        <div
+          class="model-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+          "
+        >
+          <div
+            class="model-card"
+            style="
+              background: white;
+              border-radius: 15px;
+              padding: 2rem;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                background: var(--primary-color);
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1.5rem;
+              "
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3
+              style="
+                color: #1f2937;
+                font-size: 1.1rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              ZINC ANODE
+            </h3>
+            <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.6">
+              Stores and provides zinc ions during battery operation using zinc
+              carbon material for optimal performance.
+            </p>
+          </div>
+
+          <div
+            class="model-card"
+            style="
+              background: white;
+              border-radius: 15px;
+              padding: 2rem;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                background: var(--primary-color);
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1.5rem;
+              "
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              >
+                <rect x="2" y="6" width="20" height="12" rx="2" />
+                <circle cx="12" cy="12" r="2" />
+                <path d="M2 12h4m12 0h4" />
+              </svg>
+            </div>
+            <h3
+              style="
+                color: #1f2937;
+                font-size: 1.1rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              CATHODE SYSTEM
+            </h3>
+            <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.6">
+              Accepts zinc ions during discharge and releases them during
+              charging using manganese oxide carbon.
+            </p>
+          </div>
+
+          <div
+            class="model-card"
+            style="
+              background: white;
+              border-radius: 15px;
+              padding: 2rem;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                background: var(--primary-color);
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1.5rem;
+              "
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              >
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                <circle cx="12" cy="12" r="2" />
+              </svg>
+            </div>
+            <h3
+              style="
+                color: #1f2937;
+                font-size: 1.1rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              AQUEOUS ELECTROLYTE
+            </h3>
+            <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.6">
+              Safe aqueous solution medium that enables zinc ion transport
+              between anode and cathode.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Advantages Section -->
+    <section class="business-model" id="advantages">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 2rem">
+          <h2
+            style="
+              color: #1f2937;
+              font-size: 2.5rem;
+              font-weight: 800;
+              margin-bottom: 1rem;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            KEY ADVANTAGES & BENEFITS
+          </h2>
+          <div
+            style="
+              width: 80px;
+              height: 4px;
+              background: linear-gradient(90deg, #10b981, #059669);
+              margin: 0 auto;
+              border-radius: 2px;
+            "
+          ></div>
+        </div>
+
+        <div
+          class="model-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+          "
+        >
+          <div
+            class="model-card"
+            style="
+              background: white;
+              border-radius: 15px;
+              padding: 2rem;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                background: var(--primary-color);
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1.5rem;
+              "
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"
+                />
+                <path d="M9 12l2 2 4-4" />
+              </svg>
+            </div>
+            <h3
+              style="
+                color: #1f2937;
+                font-size: 1.1rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              ENHANCED SAFETY
+            </h3>
+            <p
+              style="
+                color: #6b7280;
+                font-size: 0.95rem;
+                line-height: 1.6;
+                text-align: center;
+                margin: 0;
+              "
+            >
+              Non-flammable and less prone to overheating compared to
+              lithium-ion technology.
+            </p>
+          </div>
+
+          <div
+            class="model-card"
+            style="
+              background: white;
+              border-radius: 15px;
+              padding: 2rem;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                background: var(--primary-color);
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1.5rem;
+              "
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              >
+                <path d="M3 6h18l-2 13H5L3 6z" />
+                <path d="M3 6L2.25 2H1" />
+                <circle cx="9" cy="19" r="1" />
+                <circle cx="20" cy="19" r="1" />
+              </svg>
+            </div>
+            <h3
+              style="
+                color: #1f2937;
+                font-size: 1.1rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              ENVIRONMENTAL SUSTAINABILITY
+            </h3>
+            <p
+              style="
+                color: #6b7280;
+                font-size: 0.95rem;
+                line-height: 1.6;
+                text-align: center;
+                margin: 0;
+              "
+            >
+              Uses abundant zinc with lower environmental impact and recyclable
+              materials.
+            </p>
+          </div>
+
+          <div
+            class="model-card"
+            style="
+              background: white;
+              border-radius: 15px;
+              padding: 2rem;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                background: var(--primary-color);
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1.5rem;
+              "
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 1v22m5-18H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                />
+              </svg>
+            </div>
+            <h3
+              style="
+                color: #1f2937;
+                font-size: 1.1rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              COST EFFICIENCY
+            </h3>
+            <p
+              style="
+                color: #6b7280;
+                font-size: 0.95rem;
+                line-height: 1.6;
+                text-align: center;
+                margin: 0;
+              "
+            >
+              More affordable due to zinc abundance and reduced vulnerability to
+              resource constraints.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Innovation Section -->
+    <section class="core-concept" id="innovation">
+      <div class="container">
+        <h2 class="section-title">TECHNICAL INNOVATION & PERFORMANCE</h2>
+        <div class="section-divider"></div>
+
+        <div class="concept-grid">
+          <div class="concept-content">
+            <h3
+              style="
+                color: var(--text-color);
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                text-transform: uppercase;
+              "
+            >
+              CELL SPECIFICATIONS (EVAP SOLAR)
+            </h3>
+            <div
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 10px;
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+              "
+            >
+              <div style="display: grid; gap: 0.8rem">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                  "
+                >
+                  <span style="font-weight: 600; color: var(--text-color)"
+                    >Nominal Voltage:</span
+                  >
+                  <span style="font-weight: 500; color: var(--primary-color)"
+                    >24 VDC</span
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                  "
+                >
+                  <span style="font-weight: 600; color: var(--text-color)"
+                    >Nominal Capacity:</span
+                  >
+                  <span style="font-weight: 500; color: var(--primary-color)"
+                    >6.35 Ah</span
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                  "
+                >
+                  <span style="font-weight: 600; color: var(--text-color)"
+                    >Efficiency:</span
+                  >
+                  <span style="font-weight: 500; color: var(--primary-color)"
+                    >90%</span
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                  "
+                >
+                  <span style="font-weight: 600; color: var(--text-color)"
+                    >Max Charge/Discharge:</span
+                  >
+                  <span style="font-weight: 500; color: var(--primary-color)"
+                    >145 W</span
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                  "
+                >
+                  <span style="font-weight: 600; color: var(--text-color)"
+                    >SoC Window:</span
+                  >
+                  <span style="font-weight: 500; color: var(--primary-color)"
+                    >0–100%</span
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                  "
+                >
+                  <span style="font-weight: 600; color: var(--text-color)"
+                    >Operating Temperature:</span
+                  >
+                  <span style="font-weight: 500; color: var(--primary-color)"
+                    >+10°C to +30°C</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <h3
+              style="
+                color: var(--text-color);
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                text-transform: uppercase;
+              "
+            >
+              PERFORMANCE METRICS
+            </h3>
+            <div
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 10px;
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+              "
+            >
+              <div style="display: grid; gap: 0.8rem; margin-bottom: 1.5rem">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                  "
+                >
+                  <span style="font-weight: 600; color: var(--text-color)"
+                    >Energy Density:</span
+                  >
+                  <span style="font-weight: 500; color: var(--primary-color)"
+                    >100 Wh/L</span
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                  "
+                >
+                  <span style="font-weight: 600; color: var(--text-color)"
+                    >Weight-Specific Energy:</span
+                  >
+                  <span style="font-weight: 500; color: var(--primary-color)"
+                    >90 Wh/kg</span
+                  >
+                </div>
+              </div>
+
+              <h4
+                style="
+                  color: var(--text-color);
+                  font-size: 1.1rem;
+                  font-weight: 600;
+                  margin-bottom: 1rem;
+                "
+              >
+                Key Performance Benefits:
+              </h4>
+              <ul style="list-style: none; padding: 0; margin: 0">
+                <li
+                  style="
+                    padding: 0.3rem 0;
+                    color: var(--text-color-light);
+                    display: flex;
+                    align-items: center;
+                  "
+                >
+                  <span
+                    style="color: var(--primary-color); margin-right: 0.5rem"
+                    >•</span
+                  >
+                  Short to medium-duration energy storage
+                </li>
+                <li
+                  style="
+                    padding: 0.3rem 0;
+                    color: var(--text-color-light);
+                    display: flex;
+                    align-items: center;
+                  "
+                >
+                  <span
+                    style="color: var(--primary-color); margin-right: 0.5rem"
+                    >•</span
+                  >
+                  Adaptable for various energy needs
+                </li>
+                <li
+                  style="
+                    padding: 0.3rem 0;
+                    color: var(--text-color-light);
+                    display: flex;
+                    align-items: center;
+                  "
+                >
+                  <span
+                    style="color: var(--primary-color); margin-right: 0.5rem"
+                    >•</span
+                  >
+                  Non-flammable chemistry for safety
+                </li>
+                <li
+                  style="
+                    padding: 0.3rem 0;
+                    color: var(--text-color-light);
+                    display: flex;
+                    align-items: center;
+                  "
+                >
+                  <span
+                    style="color: var(--primary-color); margin-right: 0.5rem"
+                    >•</span
+                  >
+                  Recyclable materials design
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="concept-image"
+            style="display: flex; align-items: center; justify-content: center"
+          >
+            <div
+              style="
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                max-width: 100%;
+                height: auto;
+              "
+            >
+              <img
+                src="https://images.pexels.com/photos/159201/circuit-circuit-board-resistor-computer-159201.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Battery Technology Innovation"
+                loading="lazy"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  border-radius: 15px;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="features" id="applications">
+      <div class="container">
+        <h2 class="section-title">APPLICATIONS & USE CASES</h2>
+        <div class="section-divider"></div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Utility & Grid Support</h3>
+            <p class="feature-description">
+              Balance supply and demand while integrating renewable energy
+              sources into the grid.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9,22 9,12 15,12 15,22" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Residential Energy</h3>
+            <p class="feature-description">
+              Dependable backup power and intelligent energy management for
+              homes.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 21h18" />
+                <path d="M5 21V7l8-4v18" />
+                <path d="M19 21V11l-6-4" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Business & Industry</h3>
+            <p class="feature-description">
+              Reduce operational downtime and cut energy costs for commercial
+              and industrial facilities.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M9 12l2 2 4-4" />
+                <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3" />
+                <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3" />
+                <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3" />
+                <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Critical Infrastructure</h3>
+            <p class="feature-description">
+              Uninterrupted power supply for hospitals, telecom networks, and
+              emergency services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3 class="footer-title">
+              EVAP<span class="logo-highlight">Solar</span>
+            </h3>
+            <p class="footer-text">
+              Leading the transition to clean energy through innovative solar
+              and EV infrastructure solutions.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html#products">Products</a></li>
+              <li><a href="index.html#solutions">Solutions</a></li>
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="index.html#news">News</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-heading">Contact Us</h4>
+            <ul class="footer-contact">
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"
+                  />
+                </svg>
+                123 Green Energy Boulevard, Solar City, SC 12345
+              </li>
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"
+                  />
+                </svg>
+                +1 (555) 123-4567
+              </li>
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
+                  />
+                </svg>
+                info@evapsolar.com
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 EVAPSolar. All rights reserved. |
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
