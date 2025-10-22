@@ -53,13 +53,13 @@ footer {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: #ffffff;
+  background-color: transparent;
   transition: background-color 0.3s ease,
     box-shadow 0.3s ease,
     transform 0.3s ease,
     padding 0.3s ease;
-  padding: calc(var(--spacing-unit) * 1.5) 0;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.12);
+  padding: calc(var(--spacing-unit) * 2) 0;
+  box-shadow: none;
   transform: translateY(0);
 }
 
@@ -105,11 +105,11 @@ footer {
   display: block;
   object-fit: contain;
   transition: all var(--transition-speed);
-  /* Original colored logo for white navbar */
-  filter: brightness(1) invert(0) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+  /* White inverted logo on transparent navbar */
+  filter: brightness(0) invert(1) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
 }
 
-/* Keep original colored logo when scrolled */
+/* Original colored logo when scrolled */
 .navbar.scrolled .logo-image {
   filter: brightness(1) invert(0) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
 }
@@ -117,7 +117,7 @@ footer {
 .nav-logo .logo-text {
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--color-text-dark);
+  color: var(--color-text-light);
   letter-spacing: -0.5px;
   transition: color var(--transition-speed);
 }
@@ -137,13 +137,13 @@ footer {
 }
 
 .nav-link {
-  color: var(--color-text-dark);
+  color: var(--color-text-light);
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
   transition: color var(--transition-speed);
   position: relative;
-  text-shadow: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .navbar.scrolled .nav-link {
@@ -183,7 +183,7 @@ footer {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background-color: var(--color-text-dark);
+  background-color: var(--color-text-light);
   transition: all var(--transition-speed);
   border-radius: 2px;
 }
@@ -3150,6 +3150,411 @@ footer {
   color: var(--color-primary);
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE STYLES
+   ========================================== */
+
+/* Tablets and Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 calc(var(--spacing-unit) * 3);
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .products-showcase {
+    padding: calc(var(--spacing-unit) * 10) calc(var(--spacing-unit) * 3);
+  }
+
+  .products-showcase-content {
+    padding: calc(var(--spacing-unit) * 4);
+  }
+
+  .preview-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Tablets (max-width: 968px) */
+@media (max-width: 968px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    padding: calc(var(--spacing-unit) * 10) calc(var(--spacing-unit) * 4);
+    gap: calc(var(--spacing-unit) * 3);
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-link {
+    color: var(--color-text-dark);
+    font-size: 1.1rem;
+    text-shadow: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    margin-top: 10px;
+    padding-left: 15px;
+    display: none;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .products-showcase {
+    padding: calc(var(--spacing-unit) * 8) calc(var(--spacing-unit) * 3);
+  }
+
+  .products-showcase-content {
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing-unit) * 4);
+    text-align: center;
+  }
+
+  .products-showcase-image,
+  .products-showcase-secondary {
+    max-width: 100%;
+  }
+
+  .carousel-controls-products {
+    justify-content: center;
+  }
+
+  .preview-content-full {
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing-unit) * 4);
+  }
+
+  .preview-content-full.reverse {
+    direction: ltr;
+  }
+
+  .preview-title {
+    font-size: 2rem;
+  }
+
+  .preview-stats {
+    flex-direction: column;
+    gap: calc(var(--spacing-unit) * 3);
+  }
+
+  .back-to-top {
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: auto;
+    bottom: 20px;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .applications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .product-card-new {
+    height: 380px;
+  }
+
+  .product-img {
+    max-height: 240px;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .carousel-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .products-showcase-title {
+    font-size: 2rem;
+  }
+
+  .product-carousel-name {
+    font-size: 1.8rem;
+  }
+
+  .products-label {
+    font-size: 0.85rem;
+  }
+
+  .preview-text-side {
+    padding: calc(var(--spacing-unit) * 3);
+  }
+
+  .preview-title {
+    font-size: 1.75rem;
+  }
+
+  .preview-description {
+    font-size: 1rem;
+  }
+
+  .preview-image-side img {
+    height: 400px;
+  }
+
+  .feature-item {
+    font-size: 0.95rem;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+  }
+
+  .modal-content {
+    width: 95%;
+    max-width: none;
+    margin: 20px;
+    padding: calc(var(--spacing-unit) * 3);
+  }
+
+  .modal-header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 calc(var(--spacing-unit) * 2);
+  }
+
+  .nav-container {
+    padding: 0 calc(var(--spacing-unit) * 2);
+  }
+
+  .logo-image {
+    height: 50px;
+  }
+
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .carousel-indicators {
+    gap: 8px;
+  }
+
+  .indicator {
+    width: 8px;
+    height: 8px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .products-showcase {
+    padding: calc(var(--spacing-unit) * 6) calc(var(--spacing-unit) * 2);
+  }
+
+  .products-showcase-content {
+    padding: calc(var(--spacing-unit) * 3);
+  }
+
+  .products-showcase-title {
+    font-size: 1.5rem;
+  }
+
+  .product-carousel-name {
+    font-size: 1.5rem;
+  }
+
+  .product-carousel-features {
+    font-size: 0.9rem;
+  }
+
+  .products-showcase-image img,
+  .products-showcase-secondary img {
+    height: 250px;
+  }
+
+  .preview-title {
+    font-size: 1.5rem;
+  }
+
+  .preview-description {
+    font-size: 0.95rem;
+  }
+
+  .preview-button {
+    padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 3);
+    font-size: 0.9rem;
+  }
+
+  .preview-image-side img {
+    height: 300px;
+  }
+
+  .feature-item {
+    font-size: 0.9rem;
+  }
+
+  .feature-item svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .stat-value {
+    font-size: 1.75rem;
+  }
+
+  .stat-text {
+    font-size: 0.9rem;
+  }
+
+  .product-content {
+    padding: calc(var(--spacing-unit) * 2);
+  }
+
+  .product-card-new {
+    height: 360px;
+  }
+
+  .product-img {
+    max-height: 220px;
+  }
+
+  .filter-btn {
+    padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 2);
+    font-size: 0.85rem;
+  }
+
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+    right: 15px;
+    bottom: 15px;
+    font-size: 1.2rem;
+  }
+
+  .modal-content {
+    padding: calc(var(--spacing-unit) * 2);
+  }
+
+  .modal-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .modal-body {
+    font-size: 0.9rem;
+  }
+
+  .spec-item {
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra Small Devices (max-width: 360px) */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .products-showcase-title {
+    font-size: 1.3rem;
+  }
+
+  .product-carousel-name {
+    font-size: 1.3rem;
+  }
+
+  .preview-title {
+    font-size: 1.3rem;
+  }
+
+  .nav-menu {
+    width: 90%;
+  }
 }
 
 @media (max-width: 768px) {
