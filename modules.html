@@ -21,9 +21,9 @@
     <nav class="navbar" id="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <span class="logo-text"
-            >EVAP<span class="logo-highlight">Solar</span></span
-          >
+          <a href="index.html">
+            <img src="/evap logo.png" alt="Evap Solar" class="logo-image" />
+          </a>
         </div>
         <div class="nav-menu" id="navMenu">
           <a href="index.html" class="nav-link">Home</a>
@@ -40,17 +40,12 @@
             </div>
           </div>
           <div class="dropdown">
-            <a href="index.html#solutions" class="nav-link dropdown-toggle"
-              >Solutions</a
-            >
+            <a href="#services" class="nav-link dropdown-toggle">Services</a>
             <div class="dropdown-menu">
-              <a href="index.html#utility" class="dropdown-item">Utility</a>
-              <a href="index.html#industrial" class="dropdown-item"
-                >Industrial</a
-              >
-              <a href="index.html#residential" class="dropdown-item"
-                >Residential</a
-              >
+              <a href="utility.html" class="dropdown-item">Utility</a>
+              <a href="industrial.html" class="dropdown-item">Industrial</a>
+              <a href="residential.html" class="dropdown-item">Residential</a>
+              <a href="business-model.html" class="dropdown-item">Business Model</a>
             </div>
           </div>
           <div class="dropdown">
@@ -82,28 +77,166 @@
 
     <!-- Hero Section -->
     <section class="hero modules-hero" id="home">
-      <div
-        class="hero-background"
-        style="
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.6),
-              rgba(0, 0, 0, 0.6)
-            ),
-            url('https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg');
-        "
-      ></div>
-      <div class="hero-content">
-        <h1 class="hero-title">
-          Solar <span class="text-highlight">Modules</span>
-        </h1>
-        <p class="hero-subtitle">High-Efficiency Photovoltaic Solutions</p>
-        <p class="hero-description">
-          Advanced solar modules designed for maximum energy conversion and
-          long-term reliability across residential and commercial applications.
-        </p>
-        <div class="hero-cta">
-          <a href="#features" class="cta-button">Explore Modules</a>
-          <a href="#contact" class="cta-button secondary">Get Quote</a>
+      <div class="modules-hero-container">
+        <div class="modules-hero-content">
+          <p class="hero-label">Products</p>
+          <h1 class="hero-title">Leading The Industry For Decades</h1>
+          <h2 class="modules-main-title">Modules</h2>
+          <ul class="modules-types-list">
+            <li>PERC</li>
+            <li>N-Type</li>
+            <li>Featured</li>
+          </ul>
+          <button class="learn-more-btn">Learn More</button>
+          <div class="hero-navigation">
+            <button class="hero-nav-btn prev" aria-label="Previous">‹</button>
+            <button class="hero-nav-btn next" aria-label="Next">›</button>
+          </div>
+        </div>
+        <div class="modules-hero-image">
+          <img src="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=800" 
+               alt="Solar Module" class="main-module-image">
+          <img src="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=600" 
+               alt="Energy Storage" class="secondary-image storage-unit">
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Range Section -->
+    <section class="product-range" id="products">
+      <div class="container">
+        <h2 class="section-title">Our Module Range</h2>
+        <div class="section-divider"></div>
+        
+        <!-- Filter Buttons -->
+        <div class="product-filters">
+          <button class="filter-btn active" data-filter="all">ALL</button>
+          <button class="filter-btn" data-filter="182mm">182mm</button>
+          <button class="filter-btn" data-filter="210mm">210mm</button>
+          <button class="filter-btn" data-filter="full-black">Full black</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="products-grid">
+          <!-- Product 1: M10/72GDF -->
+          <div class="product-card-new" data-category="182mm">
+            <div class="product-model">M10/72GDF</div>
+            <div class="product-specs">
+              <div class="spec-item">
+                <div class="spec-value">555W</div>
+                <div class="spec-label">Power</div>
+              </div>
+              <div class="spec-divider"></div>
+              <div class="spec-item">
+                <div class="spec-value">21.5%</div>
+                <div class="spec-label">Efficiency</div>
+              </div>
+            </div>
+            <div class="product-image-container">
+              <img src="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="M10/72GDF Solar Module" class="product-img">
+            </div>
+          </div>
+
+          <!-- Product 2: M10/72H -->
+          <div class="product-card-new" data-category="182mm">
+            <div class="product-model">M10/72H</div>
+            <div class="product-specs">
+              <div class="spec-item">
+                <div class="spec-value">560W</div>
+                <div class="spec-label">Power</div>
+              </div>
+              <div class="spec-divider"></div>
+              <div class="spec-item">
+                <div class="spec-value">21.7%</div>
+                <div class="spec-label">Efficiency</div>
+              </div>
+            </div>
+            <div class="product-image-container">
+              <img src="https://images.pexels.com/photos/371900/pexels-photo-371900.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="M10/72H Solar Module" class="product-img">
+            </div>
+          </div>
+
+          <!-- Product 3: M12/60GDF -->
+          <div class="product-card-new" data-category="210mm full-black">
+            <div class="product-model">M12/60GDF</div>
+            <div class="product-specs">
+              <div class="spec-item">
+                <div class="spec-value">610W</div>
+                <div class="spec-label">Power</div>
+              </div>
+              <div class="spec-divider"></div>
+              <div class="spec-item">
+                <div class="spec-value">21.6%</div>
+                <div class="spec-label">Efficiency</div>
+              </div>
+            </div>
+            <div class="product-image-container">
+              <img src="https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="M12/60GDF Solar Module" class="product-img">
+            </div>
+          </div>
+
+          <!-- Product 4: M12/66H -->
+          <div class="product-card-new" data-category="210mm">
+            <div class="product-model">M12/66H</div>
+            <div class="product-specs">
+              <div class="spec-item">
+                <div class="spec-value">625W</div>
+                <div class="spec-label">Power</div>
+              </div>
+              <div class="spec-divider"></div>
+              <div class="spec-item">
+                <div class="spec-value">22.1%</div>
+                <div class="spec-label">Efficiency</div>
+              </div>
+            </div>
+            <div class="product-image-container">
+              <img src="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="M12/66H Solar Module" class="product-img">
+            </div>
+          </div>
+
+          <!-- Product 5: M10/60GDF -->
+          <div class="product-card-new" data-category="182mm">
+            <div class="product-model">M10/60GDF</div>
+            <div class="product-specs">
+              <div class="spec-item">
+                <div class="spec-value">460W</div>
+                <div class="spec-label">Power</div>
+              </div>
+              <div class="spec-divider"></div>
+              <div class="spec-item">
+                <div class="spec-value">21.3%</div>
+                <div class="spec-label">Efficiency</div>
+              </div>
+            </div>
+            <div class="product-image-container">
+              <img src="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="M10/60GDF Solar Module" class="product-img">
+            </div>
+          </div>
+
+          <!-- Product 6: Full Black Series -->
+          <div class="product-card-new" data-category="full-black">
+            <div class="product-model">M12/60FB</div>
+            <div class="product-specs">
+              <div class="spec-item">
+                <div class="spec-value">590W</div>
+                <div class="spec-label">Power</div>
+              </div>
+              <div class="spec-divider"></div>
+              <div class="spec-item">
+                <div class="spec-value">21.8%</div>
+                <div class="spec-label">Efficiency</div>
+              </div>
+            </div>
+            <div class="product-image-container">
+              <img src="https://images.pexels.com/photos/371900/pexels-photo-371900.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="M12/60FB Full Black Solar Module" class="product-img">
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -112,11 +245,12 @@
     <section class="features" id="features">
       <div class="container">
         <h2 class="section-title">Module Features</h2>
+        <div class="section-divider"></div>
         <div class="features-grid">
           <div class="feature-item">
             <h3>High Efficiency</h3>
             <p>
-              Industry-leading conversion rates for maximum power output per
+              Industry-leading conversion rates up to 23.5% for maximum power output per
               square meter.
             </p>
           </div>
@@ -124,7 +258,7 @@
             <h3>Durability</h3>
             <p>
               Built to withstand extreme weather conditions with 25+ year
-              warranties.
+              warranties and IP68 rating.
             </p>
           </div>
           <div class="feature-item">
@@ -133,6 +267,141 @@
               Competitive pricing with excellent return on investment for all
               applications.
             </p>
+          </div>
+          <div class="feature-item">
+            <h3>Advanced Technology</h3>
+            <p>
+              PERC and N-Type cell technology for superior performance in low-light conditions.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h3>Eco-Friendly</h3>
+            <p>
+              Manufactured with sustainable practices and recyclable materials for minimal environmental impact.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h3>Smart Integration</h3>
+            <p>
+              Compatible with smart home systems and energy management platforms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Concept Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title">Module Features</h2>
+        <div class="section-divider"></div>
+        <div class="features-grid">
+          <div class="feature-item">
+            <h3>High Efficiency</h3>
+            <p>
+              Industry-leading conversion rates up to 23.5% for maximum power output per
+              square meter.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h3>Durability</h3>
+            <p>
+              Built to withstand extreme weather conditions with 25+ year
+              warranties and IP68 rating.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h3>Cost Effective</h3>
+            <p>
+              Competitive pricing with excellent return on investment for all
+              applications.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h3>Advanced Technology</h3>
+            <p>
+              PERC and N-Type cell technology for superior performance in low-light conditions.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h3>Eco-Friendly</h3>
+            <p>
+              Manufactured with sustainable practices and recyclable materials for minimal environmental impact.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h3>Smart Integration</h3>
+            <p>
+              Compatible with smart home systems and energy management platforms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Concept Section -->
+    <section class="core-concept" id="concept">
+      <div class="container">
+        <h2 class="section-title">Core Concept</h2>
+        <div class="section-divider"></div>
+        <div class="concept-grid">
+          <div class="concept-content">
+            <p>
+              EVAPSolar modules represent the pinnacle of photovoltaic technology, combining cutting-edge research
+              with practical engineering. Our modules are designed to deliver exceptional performance across 
+              diverse environmental conditions, from residential rooftops to large-scale commercial installations.
+            </p>
+            <p>
+              Each module undergoes rigorous testing to ensure reliability, efficiency, and longevity. We focus on three essentials:
+            </p>
+            <ul class="innovation-features">
+              <li>
+                <strong>Solar Modules:</strong> High-efficiency panels for reliable, green energy.
+              </li>
+              <li>
+                <strong>Power Plants:</strong> On-site solar systems for businesses and industries.
+              </li>
+              <li>
+                <strong>Energy Storage:</strong> Store extra energy for use anytime.
+              </li>
+            </ul>
+            <h3 class="innovation-title"
+              style="margin-top: 2rem; color: var(--color-primary)">
+              Why Choose Our Modules?
+            </h3>
+            <ul class="innovation-features">
+              <li>Maximum energy conversion efficiency</li>
+              <li>Proven durability in harsh conditions</li>
+              <li>Comprehensive warranty coverage</li>
+              <li>Seamless integration with existing systems</li>
+              <li>Expert installation and support services</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="applications" id="applications">
+      <div class="container">
+        <h2 class="section-title">Applications</h2>
+        <div class="section-divider"></div>
+        <div class="applications-grid">
+          <div class="application-item">
+            <h3>Residential</h3>
+            <p>Perfect for home solar installations, reducing energy bills and carbon footprint.</p>
+          </div>
+          <div class="application-item">
+            <h3>Commercial</h3>
+            <p>Ideal for businesses looking to cut costs and demonstrate environmental commitment.</p>
+          </div>
+          <div class="application-item">
+            <h3>Industrial</h3>
+            <p>Robust solutions for large-scale industrial energy requirements.</p>
+          </div>
+          <div class="application-item">
+            <h3>Utility Scale</h3>
+            <p>High-capacity modules designed for solar farms and utility-grade installations.</p>
           </div>
         </div>
       </div>

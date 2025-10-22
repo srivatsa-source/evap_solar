@@ -21,9 +21,9 @@
     <nav class="navbar" id="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <span class="logo-text"
-            >EVAP<span class="logo-highlight">Solar</span></span
-          >
+          <a href="index.html">
+            <img src="/evap-logo.png" alt="Evap Solar" class="logo-image" />
+          </a>
         </div>
         <div class="nav-menu" id="navMenu">
           <a href="index.html" class="nav-link">Home</a>
@@ -31,12 +31,8 @@
             <a href="#products" class="nav-link dropdown-toggle">Products</a>
             <div class="dropdown-menu">
               <a href="modules.html" class="dropdown-item">Modules</a>
-              <a href="energy-storage.html" class="dropdown-item"
-                >Energy Storage</a
-              >
-              <a href="charging-stations.html" class="dropdown-item active"
-                >Charging Stations</a
-              >
+              <a href="energy-storage.html" class="dropdown-item">Energy Storage</a>
+              <a href="charging-stations.html" class="dropdown-item active">Charging Stations</a>
             </div>
           </div>
           <div class="dropdown">
@@ -105,6 +101,145 @@
         <div class="hero-cta">
           <a href="#features" class="cta-button">Discover GARUDA</a>
           <a href="#contact" class="cta-button secondary">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Range Section -->
+    <section class="product-range" id="products">
+      <div class="container">
+        <h2 class="section-title">GARUDA Charging Solutions</h2>
+        <div class="section-divider"></div>
+        
+        <!-- Filter Buttons -->
+        <div class="product-filters">
+          <button class="filter-btn active" data-filter="all">ALL</button>
+          <button class="filter-btn" data-filter="level-2">Level 2 (AC)</button>
+          <button class="filter-btn" data-filter="dc-fast">DC Fast Charging</button>
+          <button class="filter-btn" data-filter="ultra-fast">Ultra Fast</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="products-grid">
+          <!-- Product 1: Level 2 - 7kW -->
+          <div class="product-card-new" data-category="level-2">
+            <div class="product-model">GARUDA-7AC</div>
+            <div class="product-specs">
+              <div class="spec-item">
+                <div class="spec-value">7kW</div>
+                <div class="spec-label">Power</div>
+              </div>
+              <div class="spec-divider"></div>
+              <div class="spec-item">
+                <div class="spec-value">Type 2</div>
+                <div class="spec-label">Connector</div>
+              </div>
+            </div>
+            <div class="product-image-container">
+              <img src="https://images.pexels.com/photos/8349487/pexels-photo-8349487.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="GARUDA-7AC Charger" class="product-img">
+            </div>
+          </div>
+
+          <!-- Product 2: Level 2 - 22kW -->
+          <div class="product-card-new" data-category="level-2">
+            <div class="product-model">GARUDA-22AC</div>
+            <div class="product-specs">
+              <div class="spec-item">
+                <div class="spec-value">22kW</div>
+                <div class="spec-label">Power</div>
+              </div>
+              <div class="spec-divider"></div>
+              <div class="spec-item">
+                <div class="spec-value">Type 2</div>
+                <div class="spec-label">Connector</div>
+              </div>
+            </div>
+            <div class="product-image-container">
+              <img src="https://images.pexels.com/photos/9800031/pexels-photo-9800031.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="GARUDA-22AC Charger" class="product-img">
+            </div>
+          </div>
+
+          <!-- Product 3: DC Fast - 50kW -->
+          <div class="product-card-new" data-category="dc-fast">
+            <div class="product-model">GARUDA-50DC</div>
+            <div class="product-specs">
+              <div class="spec-item">
+                <div class="spec-value">50kW</div>
+                <div class="spec-label">Power</div>
+              </div>
+              <div class="spec-divider"></div>
+              <div class="spec-item">
+                <div class="spec-value">CCS2</div>
+                <div class="spec-label">Connector</div>
+              </div>
+            </div>
+            <div class="product-image-container">
+              <img src="https://images.pexels.com/photos/110844/pexels-photo-110844.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="GARUDA-50DC Charger" class="product-img">
+            </div>
+          </div>
+
+          <!-- Product 4: DC Fast - 120kW -->
+          <div class="product-card-new" data-category="dc-fast">
+            <div class="product-model">GARUDA-120DC</div>
+            <div class="product-specs">
+              <div class="spec-item">
+                <div class="spec-value">120kW</div>
+                <div class="spec-label">Power</div>
+              </div>
+              <div class="spec-divider"></div>
+              <div class="spec-item">
+                <div class="spec-value">CCS2</div>
+                <div class="spec-label">Connector</div>
+              </div>
+            </div>
+            <div class="product-image-container">
+              <img src="https://images.pexels.com/photos/8349487/pexels-photo-8349487.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="GARUDA-120DC Charger" class="product-img">
+            </div>
+          </div>
+
+          <!-- Product 5: Ultra Fast - 180kW -->
+          <div class="product-card-new" data-category="ultra-fast">
+            <div class="product-model">GARUDA-180DC</div>
+            <div class="product-specs">
+              <div class="spec-item">
+                <div class="spec-value">180kW</div>
+                <div class="spec-label">Power</div>
+              </div>
+              <div class="spec-divider"></div>
+              <div class="spec-item">
+                <div class="spec-value">CCS2</div>
+                <div class="spec-label">Connector</div>
+              </div>
+            </div>
+            <div class="product-image-container">
+              <img src="https://images.pexels.com/photos/9800031/pexels-photo-9800031.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="GARUDA-180DC Charger" class="product-img">
+            </div>
+          </div>
+
+          <!-- Product 6: Ultra Fast - 350kW -->
+          <div class="product-card-new" data-category="ultra-fast">
+            <div class="product-model">GARUDA-350DC</div>
+            <div class="product-specs">
+              <div class="spec-item">
+                <div class="spec-value">350kW</div>
+                <div class="spec-label">Power</div>
+              </div>
+              <div class="spec-divider"></div>
+              <div class="spec-item">
+                <div class="spec-value">CCS2</div>
+                <div class="spec-label">Connector</div>
+              </div>
+            </div>
+            <div class="product-image-container">
+              <img src="https://images.pexels.com/photos/110844/pexels-photo-110844.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="GARUDA-350DC Charger" class="product-img">
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -512,14 +647,15 @@
           <a href="#contact" class="cta-button">Get GARUDA</a>
           <a href="#contact" class="cta-button secondary">Become a Partner</a>
         </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-column">
+            <div class="dropdown">
+              <a href="index.html#services" class="nav-link dropdown-toggle">Services</a>
+              <div class="dropdown-menu">
+                <a href="index.html#utility" class="dropdown-item">Utility</a>
+                <a href="index.html#industrial" class="dropdown-item">Industrial</a>
+                <a href="index.html#residential" class="dropdown-item">Residential</a>
+                <a href="business-model.html" class="dropdown-item">Business Model</a>
+              </div>
+            </div>
             <h3 class="footer-title">
               EVAP<span class="logo-highlight">Solar</span>
             </h3>

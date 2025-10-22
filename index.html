@@ -15,14 +15,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <nav class="navbar" id="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <span class="logo-text"
-            >EVAP<span class="logo-highlight">Solar</span></span
-          >
+          <a href="#home">
+            <img src="/evap-logo.png" alt="EVAPSolar" class="logo-image" />
+          </a>
         </div>
         <div class="nav-menu" id="navMenu">
           <a href="#home" class="nav-link active">Home</a>
@@ -39,11 +40,14 @@
             </div>
           </div>
           <div class="dropdown">
-            <a href="#solutions" class="nav-link dropdown-toggle">Solutions</a>
+            <a href="#services" class="nav-link dropdown-toggle">Services</a>
             <div class="dropdown-menu">
-              <a href="#utility" class="dropdown-item">Utility</a>
-              <a href="#industrial" class="dropdown-item">Industrial</a>
-              <a href="#residential" class="dropdown-item">Residential</a>
+              <a href="utility.html" class="dropdown-item">Utility</a>
+              <a href="industrial.html" class="dropdown-item">Industrial</a>
+              <a href="residential.html" class="dropdown-item">Residential</a>
+              <a href="business-model.html" class="dropdown-item"
+                >Business Model</a
+              >
             </div>
           </div>
           <div class="dropdown">
@@ -136,199 +140,247 @@
             </p>
           </div>
         </div>
+        <div class="hero-slide">
+          <div
+            class="hero-background"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url('https://images.pexels.com/photos/371900/pexels-photo-371900.jpeg?auto=compress&cs=tinysrgb&w=1920');
+            "
+          ></div>
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Advanced
+              <span class="text-highlight">Energy Storage</span> Solutions
+            </h1>
+            <p class="hero-subtitle">
+              Store solar energy for 24/7 power availability
+            </p>
+          </div>
+        </div>
+        <div class="hero-slide">
+          <div
+            class="hero-background"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url('https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=1920');
+            "
+          ></div>
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Premium
+              <span class="text-highlight">Solar Modules</span> Technology
+            </h1>
+            <p class="hero-subtitle">
+              High-efficiency photovoltaic solutions for every need
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="carousel-controls">
-        <button
-          class="carousel-btn prev"
-          id="prevBtn"
-          aria-label="Previous slide"
-        >
-          ‹
-        </button>
         <div class="carousel-indicators" id="indicators"></div>
-        <button class="carousel-btn next" id="nextBtn" aria-label="Next slide">
-          ›
-        </button>
       </div>
     </section>
 
     <section class="products" id="products">
-      <div class="container">
-        <h2 class="section-title">Our Products</h2>
-        <div class="section-divider"></div>
-
-        <div class="product-grid">
-          <div class="product-item">
-            <div class="product-content">
-              <h3 class="product-title">Solar Modules</h3>
-              <p class="product-description">
-                High-efficiency photovoltaic solutions designed for maximum
-                energy output and long-term reliability.
-              </p>
-              <ul class="product-features">
-                <li>
-                  <span class="feature-bullet">•</span> PERC Technology Modules
-                </li>
-                <li>
-                  <span class="feature-bullet">•</span> N-Type Advanced Cells
-                </li>
-                <li>
-                  <span class="feature-bullet">•</span> Featured Premium Series
-                </li>
-              </ul>
-              <a href="#" class="product-link">Explore Solar Modules →</a>
-            </div>
-            <div class="product-image">
-              <img
-                src="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Solar Modules"
-                loading="lazy"
-              />
-            </div>
+      <div class="products-showcase">
+        <div class="products-showcase-content">
+          <p class="products-label">Products</p>
+          <h2 class="products-showcase-title">Leading The Industry For Decades</h2>
+          
+          <div class="products-carousel-info">
+            <h3 class="product-carousel-name">Modules</h3>
+            <ul class="product-carousel-features">
+              <li>PERC</li>
+              <li>N-Type</li>
+              <li>Featured</li>
+            </ul>
+            <a href="modules.html" class="product-carousel-link">
+              Learn More →
+            </a>
           </div>
-
-          <div class="product-item reverse">
-            <div class="product-content">
-              <h3 class="product-title">EV Chargers</h3>
-              <p class="product-description">
-                Comprehensive charging infrastructure for residential,
-                commercial, and fast-charging applications.
-              </p>
-              <ul class="product-features">
-                <li>
-                  <span class="feature-bullet">•</span> Residential Chargers
-                </li>
-                <li>
-                  <span class="feature-bullet">•</span> Commercial Solutions
-                </li>
-                <li>
-                  <span class="feature-bullet">•</span> DC Fast Charging
-                  Stations
-                </li>
-              </ul>
-              <a href="#" class="product-link">Explore EV Chargers →</a>
-            </div>
-            <div class="product-image">
-              <img
-                src="https://images.pexels.com/photos/7841470/pexels-photo-7841470.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="EV Chargers"
-                loading="lazy"
-              />
-            </div>
+          
+          <div class="products-carousel-controls">
+            <button class="carousel-control-btn prev" id="productPrev">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="carousel-control-btn next" id="productNext">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
           </div>
         </div>
+        
+        <div class="products-showcase-image">
+          <img id="productShowcaseImg" 
+               src="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=800" 
+               alt="Solar Module" />
+        </div>
+        
+        <div class="products-showcase-secondary">
+          <img src="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=800" 
+               alt="Energy Storage" />
+        </div>
+        
+        <button class="back-to-top-circle" id="backToTopCircle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="16 12 12 8 8 12"></polyline>
+            <line x1="12" y1="16" x2="12" y2="8"></line>
+          </svg>
+          <span>TOP</span>
+        </button>
       </div>
     </section>
 
-    <section class="solutions" id="solutions">
-      <div
-        class="solutions-background"
-        style="
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.7),
-              rgba(0, 0, 0, 0.7)
-            ),
-            url('https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg?auto=compress&cs=tinysrgb&w=1920');
-        "
-      ></div>
-      <div class="solutions-content">
-        <h2 class="section-title light">Sustainable Solutions</h2>
-        <div class="section-divider light"></div>
-        <p class="solutions-text">
-          Integrated renewable energy systems that combine solar power
-          generation with electric vehicle infrastructure for complete
-          sustainability.
+    <!-- Industrial Strength Section -->
+    <section class="page-preview industrial-preview">
+      <div class="preview-background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/532192/pexels-photo-532192.jpeg?auto=compress&cs=tinysrgb&w=1920');"></div>
+      <div class="preview-content">
+        <p class="preview-label">Industrial Strength</p>
+        <h2 class="preview-title">Integrated Industrial Chain<br>In PV industry</h2>
+        <p class="preview-description">
+          GCL has established a complete vertical integration industry chain.
         </p>
-        <a href="#" class="cta-button">Discover Our Solutions</a>
+        <a href="industrial.html" class="preview-button">Learn More</a>
+      </div>
+      <div class="preview-media">
+        <div class="video-placeholder">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon>
+          </svg>
+          <p>Play Video</p>
+        </div>
+      </div>
+      <div class="scroll-to-top-icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="16 12 12 8 8 12"></polyline>
+          <line x1="12" y1="16" x2="12" y2="8"></line>
+        </svg>
+        <span>TOP</span>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-image">
-            <img
-              src="https://images.pexels.com/photos/8853502/pexels-photo-8853502.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="About EVAPSolar"
-              loading="lazy"
-            />
-          </div>
-          <div class="about-content">
-            <h2 class="section-title">About EVAPSolar</h2>
-            <div class="section-divider"></div>
-            <p class="about-text">
-              EVAPSolar is at the forefront of renewable energy innovation,
-              seamlessly integrating solar energy solutions with electric
-              vehicle infrastructure.
-            </p>
-            <p class="about-text">
-              Our mission is to create sustainable urban ecosystems where clean
-              energy powers the future of transportation and living. Through
-              cutting-edge technology and comprehensive solutions, we're
-              building a zero-carbon tomorrow.
-            </p>
-            <div class="about-stats">
-              <div class="stat-item">
-                <span class="stat-number">10K+</span>
-                <span class="stat-label">Solar Installations</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">5K+</span>
-                <span class="stat-label">EV Chargers Deployed</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">50MW+</span>
-                <span class="stat-label">Clean Energy Generated</span>
-              </div>
-            </div>
+    <!-- Utility Solutions Preview -->
+    <section class="page-preview utility-preview">
+      <div class="preview-content-full">
+        <div class="preview-text-side">
+          <p class="preview-label">Utility Scale</p>
+          <h2 class="preview-title">Large-Scale Solar Power Plants</h2>
+          <p class="preview-description">
+            Comprehensive utility-scale solar solutions delivering gigawatts of clean energy to power cities and industries. Our advanced grid-tied systems ensure maximum efficiency and reliability.
+          </p>
+          <a href="utility.html" class="preview-button">Explore Utility Solutions</a>
+        </div>
+        <div class="preview-image-side">
+          <img src="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Utility Scale Solar" />
+        </div>
+      </div>
+    </section>
 
-            <div class="contact-section">
-              <h3 class="contact-title">Get in Touch</h3>
-              <div class="contact-info">
-                <div class="contact-item">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"
-                    />
-                  </svg>
-                  <span>123 Green Energy Boulevard, Solar City, SC 12345</span>
-                </div>
-                <div class="contact-item">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"
-                    />
-                  </svg>
-                  <span>+1 (555) 123-4567</span>
-                </div>
-                <div class="contact-item">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
-                    />
-                  </svg>
-                  <span>info@evapsolar.com</span>
-                </div>
-              </div>
-            </div>
+    <!-- Residential Solutions Preview -->
+    <section class="page-preview residential-preview">
+      <div class="preview-content-full reverse">
+        <div class="preview-image-side">
+          <img src="https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Residential Solar" />
+        </div>
+        <div class="preview-text-side">
+          <p class="preview-label">Residential Solutions</p>
+          <h2 class="preview-title">Power Your Home with Clean Energy</h2>
+          <p class="preview-description">
+            Transform your home into a sustainable energy hub with our residential solar systems. Reduce electricity bills while contributing to a greener future with smart energy management.
+          </p>
+          <a href="residential.html" class="preview-button">Discover Home Solutions</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Energy Storage Preview -->
+    <section class="page-preview storage-preview">
+      <div class="preview-background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.pexels.com/photos/8853502/pexels-photo-8853502.jpeg?auto=compress&cs=tinysrgb&w=1920');"></div>
+      <div class="preview-content centered">
+        <p class="preview-label">Energy Storage</p>
+        <h2 class="preview-title">Advanced Battery Systems</h2>
+        <p class="preview-description">
+          Store solar energy for 24/7 availability. Our cutting-edge battery technology ensures power independence and grid resilience.
+        </p>
+        <div class="preview-stats">
+          <div class="preview-stat">
+            <span class="stat-value">10+ Years</span>
+            <span class="stat-text">Lifespan</span>
+          </div>
+          <div class="preview-stat">
+            <span class="stat-value">95%</span>
+            <span class="stat-text">Efficiency</span>
+          </div>
+          <div class="preview-stat">
+            <span class="stat-value">24/7</span>
+            <span class="stat-text">Power</span>
           </div>
         </div>
+        <a href="energy-storage.html" class="preview-button">View Storage Solutions</a>
+      </div>
+    </section>
+
+    <!-- EV Charging Preview -->
+    <section class="page-preview charging-preview">
+      <div class="preview-content-full">
+        <div class="preview-text-side">
+          <p class="preview-label">EV Charging</p>
+          <h2 class="preview-title">Fast & Smart EV Charging</h2>
+          <p class="preview-description">
+            GARUDA charging stations deliver rapid, intelligent charging for all electric vehicles. Our network provides seamless integration with solar power for truly sustainable mobility.
+          </p>
+          <div class="preview-features">
+            <div class="feature-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>DC Fast Charging up to 350kW</span>
+            </div>
+            <div class="feature-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Smart Load Management</span>
+            </div>
+            <div class="feature-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Solar Integration Ready</span>
+            </div>
+          </div>
+          <a href="charging-stations.html" class="preview-button">Explore Charging Stations</a>
+        </div>
+        <div class="preview-image-side">
+          <img src="https://images.pexels.com/photos/110844/pexels-photo-110844.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="EV Charging" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Research & Development Preview -->
+    <section class="page-preview rd-preview">
+      <div class="preview-background" style="background-image: linear-gradient(rgba(0, 118, 190, 0.9), rgba(0, 90, 148, 0.9)), url('https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=1920');"></div>
+      <div class="preview-content centered">
+        <p class="preview-label">Research & Development</p>
+        <h2 class="preview-title">Innovation in Solar Cell Technology</h2>
+        <p class="preview-description">
+          Pioneering next-generation solar cells with breakthrough efficiency. Our R&D team pushes the boundaries of photovoltaic technology.
+        </p>
+        <a href="solar-cells.html" class="preview-button light">Learn About Our Research</a>
       </div>
     </section>
 
